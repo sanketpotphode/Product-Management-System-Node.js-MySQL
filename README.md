@@ -72,19 +72,6 @@ npm install
 3. http://localhost:3000/products/
     -add product (POST Method)
 
-    -------- sample json body ------------
-    {
-    "name": "Sample Product",
-    "description": "This is a sample product description.",
-    "price": 29.99,
-    "quantity": 100,
-    "manufacturer": "Sample Manufacturer",
-    "images": [
-        "C:/Users/DELL/Downloads/Addhar_Card_Sanket_Potphode.jpg",
-        "C:/Users/DELL/Downloads/PAN_Card_Sanket.jpg"
-    ]
-    }
-
 4. http://localhost:3000/products/:id
     -Update product by id (PUT Method)
 

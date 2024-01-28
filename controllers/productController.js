@@ -115,7 +115,6 @@ const productController = {
   deleteProduct: async (req, res) => {
     const productId = req.params.id;
 
-
     try {
       // Role-based authorization
       const user = await UserModel.getUserById(req.user.id);

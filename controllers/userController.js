@@ -29,7 +29,7 @@ const userController = {
   },
 
   getUserProfileById: async (req, res) => {
-    const userId = req.params.userId; // Assuming the user ID is in the request parameters
+    const userId = req.params.userId;
 
     try {
       const user = await UserModel.getUserById(userId);
@@ -128,7 +128,7 @@ const userController = {
       const newUser = {
         username,
         password: hashedPassword,
-        role: ['user'], // You can customize the roles as needed
+        role: ['user'],
       };
 
       const userId = await UserModel.createUser(newUser);

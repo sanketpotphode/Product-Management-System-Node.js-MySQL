@@ -21,6 +21,8 @@ router.put('/update', userController.updateUserProfile);
 // Delete user profile (requires token authentication)
 router.delete('/delete', userController.deleteUserProfile);
 
+
+// I have aslo added this routes also added in auth routes
 // User registration
 router.post('/register', userController.registerUser);
 

@@ -39,7 +39,7 @@ const productController = {
       // Create product data
       const { name, description, price, quantity, manufacturer, files} = req.body;
   
-      // Ensure 'images' is the field name used in the form for file uploads
+      // Upload muntiple files
       upload.array('images')(req, res, async (err) => {
         if (err instanceof multer.MulterError) {
           console.error('Error in file upload:', err.message);

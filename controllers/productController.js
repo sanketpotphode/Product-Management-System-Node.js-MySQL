@@ -35,8 +35,6 @@ const productController = {
     }
   
     try {
-      // Example of role-based authorization
-      const user = await UserModel.getUserById(req.user.id);
   
       // Create product data
       const { name, description, price, quantity, manufacturer, files} = req.body;
@@ -91,7 +89,7 @@ const productController = {
     }
 
     try {
-      // Example of role-based authorization
+      // Role-based authorization
       const user = await UserModel.getUserById(req.user.id);
       if (!user.roles.includes('admin')) {
         return res.status(403).json({ message: 'Unauthorized. Only admins can update products.' });
@@ -119,7 +117,7 @@ const productController = {
 
 
     try {
-      // Example of role-based authorization
+      // Role-based authorization
       const user = await UserModel.getUserById(req.user.id);
       if (!user.roles.includes('admin')) {
         return res.status(403).json({ message: 'Unauthorized. Only admins can delete products.' });

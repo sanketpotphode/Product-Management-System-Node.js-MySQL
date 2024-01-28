@@ -1,0 +1,37 @@
+#create project
+
+mkdir product-management-system
+cd product-management-system
+npm init -y
+
+========================================
+# Installing Dependencies
+
+npm install express mysql jsonwebtoken body-parser dotenv multer
+
+========================================
+
+#foleder structure
+
+product-management-system
+|-- src
+|   |-- controllers
+|   |   |-- authController.js
+|   |   |-- productController.js
+|   |-- middleware
+|   |   |-- authMiddleware.js
+|   |   |-- validationMiddleware.js
+        |-- uploadMiddleware.js
+|   |-- models
+|   |   |-- productModel.js
+|   |   |-- userModel.js
+|   |-- routes
+|   |   |-- authRoutes.js
+|   |   |-- productRoutes.js
+|   |-- utils
+|   |   |-- logger.js
+|   |-- app.js
+|-- .env
+|-- README.md
+
+

@@ -38,6 +38,8 @@ const productController = {
   
       // Create product data
       const { name, description, price, quantity, manufacturer, files} = req.body;
+      
+      //console.log(req.body);
   
       // Upload muntiple files
       upload.array('images')(req, res, async (err) => {
@@ -50,7 +52,6 @@ const productController = {
         }
   
         const images = files.map(file => file.path);
-        //cosnt images = files;
   
         // Create product data including images
         const productData = {

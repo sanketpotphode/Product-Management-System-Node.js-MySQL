@@ -1,0 +1,7 @@
+
+DB_HOST='db_host'
+DB_USER='db_usrename'
+DB_PASSWORD='db_password'
+DB_DATABASE='database name'
+JWT_SECRET='your secret key'
+PORT=PORT_NO

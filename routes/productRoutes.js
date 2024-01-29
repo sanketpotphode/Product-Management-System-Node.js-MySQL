@@ -5,7 +5,7 @@ const authMiddleware = require('../middleware/authMiddleware');
 const uploadMiddleware = require('../middleware/uploadMiddleware');
 const { validateProduct, handleValidationErrors } = require('../middleware/validationMiddleware');
 
-// Product routes
+// Product routes...!
 
 // Get all products with pagination and filtering
 router.get('/', productController.getAllProducts);

@@ -17,7 +17,7 @@ router.get('/:id', productController.getProductById);
 router.post(
   '/',
   authMiddleware.authorizeRoles('admin'),
-  uploadMiddleware.array('images', 5), // Assuming using multer for multiple file uploads
+  uploadMiddleware.array('images', 5),
   validateProduct,
   handleValidationErrors,
   productController.createProduct
